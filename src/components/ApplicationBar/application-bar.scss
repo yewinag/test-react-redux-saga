@@ -1,26 +1,47 @@
 .app-nav{
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
     align-items: center;
-    padding-top: 40px;
-    background-color: #fff;
-    padding-left: 46px;
-    padding-right: 46px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fff;    
+    z-index: 100;
     .logo{
+        padding-left: 40px;
         img{
             height: 19px;
             width: 145px;
         }
     }
     .nav-list{
+        padding-right: 40px;
         ul{
             display: flex;
             list-style: none;
+            margin: 0;
             li{
-                padding-left: 20px;
+                padding: 14px 26px;
                 a{
                     text-decoration: none;                    
                 }
+            }
+            li.quote{
+                padding: 0;
+            }
+            li:hover {                
+                color: #1f1f1f;
+                font-weight: bold;
+            }
+            button{
+                background-color: #3a2837;
+                font-size: 14px;
+                padding: 14px 17px;
+                border-radius: 30px;
+                color: #fff;     
+                border: 0;           
             }
         }
     }

@@ -11,15 +11,36 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 65px;
+        .step-item:first-child{
+            border: 0;
+        }
         .step-item{
-            height: 100px;
             float: left;
             padding: 20px 25px;
-            cursor: pointer;            
+            cursor: pointer;  
+            border-left: 1px solid rgba(0,0,0,.1);          
             .item-title{
                 font-weight: 800;
                 font-size: 1.4em;
-                margin: 0 0 10px 0;
+                margin: 0 0 10px 0;                
+            }
+            .item-title::after{
+                content: "";
+                width: 15px;
+                height: 9px;
+                display: inline-block;
+                position: relative;                
+                margin-top: 7px;
+                margin-left: 20px;
+                background-image: url(https://www.codigo.co/img/icons/arrow-red.svg);
+                background-repeat: no-repeat;
+            }
+            .item-title:hover::after{
+                margin-left: 40px;                    
+                transition: 1s;                
+            }
+            .item-title:hover{
+                color: #d5333e; 
             }
         }
     }
