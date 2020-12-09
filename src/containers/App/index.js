@@ -3,14 +3,13 @@ import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 import ApplicationBar from '../../components/ApplicationBar';
 import HomePage from '../HomePage';
 import WorkPage from '../WorkPage';
- 
+import './app.scss'; 
 class App extends Component {
   render() { 
     return (

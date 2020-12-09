@@ -1,0 +1,27 @@
+.app-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    background-color: #fff;
+    padding-left: 46px;
+    padding-right: 46px;
+    .logo{
+        img{
+            height: 19px;
+            width: 145px;
+        }
+    }
+    .nav-list{
+        ul{
+            display: flex;
+            list-style: none;
+            li{
+                padding-left: 20px;
+                a{
+                    text-decoration: none;                    
+                }
+            }
+        }
+    }
+}

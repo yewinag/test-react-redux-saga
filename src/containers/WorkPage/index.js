@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
+import ArticleTitle from '../../components/ArticleTitle';
+import Categories from '../../components/Categories';
+import AppFooter from '../../components/AppFooter';
+import SectionCategories from '../../components/SectionCategories';
  
 class WorkPage extends Component {
     render() { 
         return (
-            <div>
-                WorkPage
-            </div>
+            <section>
+                <ArticleTitle />
+                <Categories />
+                <SectionCategories />
+                <AppFooter />
+            </section>
         );
     }
 }
