@@ -1,19 +1,40 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { useLocation } from 'react-router-dom';
 import CategoryItem from './CategoryItem';
+
+import { requestData } from '../../actions';
+
 import './section-categories.scss';
 
 class SectionCategories extends Component {
+    componentDidMount(){
+        const { searchParam } = this.props;        
+        this.props.requestData(searchParam.split('=')[1]);
+    }
+    renderServices = ()=> (
+        this.props.services.data.length > 0 && this.props.services.data.map((item,index)=> (
+            <CategoryItem item={item} key={index}/>                
+        ))
+    )                               
     render() { 
+        
         return (
-            <div className="section-categories">
-                <CategoryItem imgUrl={'/static/media/CDG-2-1.e310a9c9.jpg'}/>
-                {/* <CategoryItem imgUrl={'/static/media/FF-1.f99ab7ef.jpg'}/> */}
-                <CategoryItem imgUrl={'/static/media/CDG-2-1.e310a9c9.jpg'}/>
-                <CategoryItem imgUrl={'/static/media/CDG-2-1.e310a9c9.jpg'}/>
-                <CategoryItem imgUrl={'/static/media/CDG-2-1.e310a9c9.jpg'}/>
+            <div className="section-categories">                
+                { this.renderServices()}                              
             </div>
         );
     }
 }
- 
-export default SectionCategories;
+
+const mapStateToProps = (state) => {
+    return {
+        services: state.services
+    }
+}
+const mapDispatchToProps = (dispatch) => {
+    return {
+        requestData: (params) => dispatch(requestData(params))                    
+    }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(SectionCategories);

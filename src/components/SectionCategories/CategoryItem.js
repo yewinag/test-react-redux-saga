@@ -1,16 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
  
 import './category-item.scss';
-import img from '../../assets/img/FF-1.jpg';
-console.log(img)
-class CategoryItem extends Component {
-    render() { 
-        return (
-            <a href="/work" className="cat-item">
-                <img src={this.props.imgUrl} alt="services"/>
-            </a>
-        );
-    }
-}
+
+const CategoryItem = (props) => (
+        <a href="/work" className="cat-item">
+            <p>{props.item.txt}</p>
+            <h5>{props.item.name}</h5>
+            {/* <img src={this.props.imgUrl} alt="services"/> */}
+        </a>
+    );    
  
 export default CategoryItem;

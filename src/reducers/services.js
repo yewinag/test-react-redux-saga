@@ -1,7 +1,6 @@
-import { 
-    LOAD_SERVICES,
-    LOADING_SERVICES,
-    LOADED_SERVICES
+import {     
+    REQUEST_DATA,
+    RECEIVE_DATA
 } from '../constants/actionsTypes';
 const INITIAL_STATE = {
     isLoading: false,
@@ -9,7 +8,7 @@ const INITIAL_STATE = {
 }
 const services = (state = INITIAL_STATE, action) => {
     switch (action.type) {
-        case LOAD_SERVICES:
+        case REQUEST_DATA:
             return {
                 ...state,
                 ...{
@@ -17,23 +16,15 @@ const services = (state = INITIAL_STATE, action) => {
                     data: []
                 },
             };
-        case LOADING_SERVICES:
-            return {
-                ...state,
-                ...{
-                    isLoading: true,
-                    data: action.payload
-                }
-                
-            };
-        case LOADED_SERVICES:
+        case RECEIVE_DATA:
             return {
                 ...state,
                 ...{
                     isLoading: false,
                     data: action.payload
-                },
-            };
+                }
+                
+            };        
         default:
             return state;
     }

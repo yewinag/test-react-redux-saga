@@ -1,20 +1,18 @@
-import { put, call, takeEvery, select } from 'redux-saga/effects';
+import { put, call, takeEvery } from 'redux-saga/effects';
 
-import {loadingServices, loadedServices } from '../actions';
-import { LOAD_SERVICES } from '../constants';
+import { receiveFilterData } from '../actions';
+import { REQUEST_DATA } from '../constants/actionsTypes';
+import { filterDataFun } from '../utils';
 
-import { data } from '../constants/constants';
-
-export const getPage = state => state.nextPage;
-
-export function* handleLoad() {
+export function* handleLoad(payload) {    
     try {        
-        yield put(loadingServices(data));
+        const res = yield call(filterDataFun, payload.payload);        
+        yield put(receiveFilterData(res));
     } catch (error) {
-        yield put(loadedServices(error));
+        console.log(error)
     }
 }
 
 export default function* watchLoadData() {
-    yield takeEvery(LOAD_SERVICES, handleLoad);
+    yield takeEvery(REQUEST_DATA, handleLoad);
 }
