@@ -1,6 +1,6 @@
 import { dataSet } from '../constants';
 
-export function filterDataFun(params){    
+export function filterDataFun(params){        
     if(params == 'all'){
         return dataSet;
     }else{

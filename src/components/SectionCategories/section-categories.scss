@@ -1,16 +1,27 @@
 .section-categories{    
-    // display: grid;
-    // grid-template-columns: auto auto auto auto;
-    // grid-gap: 10px;
-    // background-color: transparent;
-    // padding: 10px;
-    // grid-auto-flow:row dense;
-
     width: 100%;
     min-height: 50vh;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 25% 25% 25% 25%;
     grid-template-columns: 25% 25% 25% 25%;
     grid-auto-flow: row dense;
+}
+@media screen and (max-width: 991px) {
+    .section-categories{    
+        width: 100%;
+        min-height: 50vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-auto-flow: row dense;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section-categories{    
+        width: 100%;
+        min-height: 50vh;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-auto-flow: row dense;
+    }
 }

@@ -6,7 +6,9 @@ class AppFooter extends Component {
     render() { 
         return (
             <footer className="section footer">
-                <h5 className="title">Let’s have a chat</h5>
+                <div>
+                    <h5 className="title">Let’s have a chat</h5>
+                </div>                
                 <div className="step-layout">
                 {
                     steps.map((item, index)=> (
@@ -20,9 +22,11 @@ class AppFooter extends Component {
                 <div className="social-info">
                     {
                         social.map( (item, index)=> (
-                            <a href={item.link} key={index} className="social__item">
+                            <div key={index}>
+                            <a href={item.link} className="social__item">
                                 <img src={item.url} alt='socail logo'/>                                      
                             </a>
+                            </div>
                         ))
                     }                                        
                 </div>

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './application-bar.scss';
 
 import logo from '../../assets/img/logo-codigo-red.svg';
+import menu from '../../assets/img/menu.png';
 class ApplicationBar extends Component {
     render() { 
         return (
@@ -12,7 +13,10 @@ class ApplicationBar extends Component {
                     <div className="logo">
                         <img src={logo} className="App-logo" alt="logo" />
                     </div>
-                    <nav className="nav-list">
+                    <nav className="nav-list">                                                
+                        <div className="mobile-btn">
+                            <img src={menu} alt="menu"/>
+                        </div>
                         <ul>
                             <li>
                                 <Link to="/work?tags=all">Work</Link>

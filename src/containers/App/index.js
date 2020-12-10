@@ -17,8 +17,9 @@ class App extends Component {
         <Router>
           <ApplicationBar />        
           <Switch>
-            <Route path="/" exact component={HomePage} />          
+            <Route path="/" exact component={WorkPage} />          
             <Route path="/work" component={WorkPage} />          
+            <Route path="*" component={WorkPage} />          
           </Switch>              
         </Router>
       </div>

@@ -12,3 +12,13 @@
     }
 }
     
+@media screen and (max-width: 991px) {
+    .article-title{         
+        .title{
+            font-size: 3em;
+        }
+        .title-three{
+            color: #d5333e !important;
+        }
+    }
+}

@@ -17,7 +17,18 @@
         }
     }
     .nav-list{
-        padding-right: 40px;
+        padding-right: 30px;
+        .mobile-btn{
+            display: none;
+            padding: 0;
+            border: 0;
+            background: transparent;
+            align-items: center;
+            img{
+                width: 30px;
+                height: 30px;
+            }
+        }
         ul{
             display: flex;
             list-style: none;
@@ -45,4 +56,21 @@
             }
         }
     }
+}
+@media screen and (max-width: 980px) {
+    .app-nav .nav-list ul {
+        display: none;
+    }
+    .app-nav .nav-list .mobile-btn {        
+        display: block;
+    }    
+}
+@media screen and (max-width: 600px) {
+    .app-nav .nav-list{
+        padding-right: 14px;
+    }
+    .app-nav .nav-list .mobile-btn {        
+        display: block;
+        padding-right: 10px;
+    }    
 }

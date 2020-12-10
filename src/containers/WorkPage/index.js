@@ -6,7 +6,6 @@ import SectionCategories from '../../components/SectionCategories';
  
 class WorkPage extends Component {
     
-
     render() { 
         const { search } = this.props.location;
         return (

@@ -9,20 +9,22 @@
     }
     .step-layout{
         display: flex;
-        justify-content: space-between;
         margin-bottom: 65px;
         .step-item:first-child{
-            border: 0;
+            border-left: 0;
         }
         .step-item{
-            float: left;
-            padding: 20px 25px;
+            padding: 16px;
             cursor: pointer;  
+            flex: 1;
             border-left: 1px solid rgba(0,0,0,.1);          
             .item-title{
                 font-weight: 800;
                 font-size: 1.4em;
                 margin: 0 0 10px 0;                
+            }
+            .item-txt{
+                margin: 0;
             }
             .item-title::after{
                 content: "";
@@ -61,4 +63,44 @@
             text-align: center;
         }
     }        
+}
+@media screen and (max-width: 991px) {
+    .footer{
+        .title{
+            margin-bottom: 30px;
+            font-weight: 400;
+            font-size: 3em;
+            color: #d5333e;
+            text-align: center;
+        }
+        .step-layout{
+            display: block;
+            .step-item{
+                border-left: 0;
+                border-bottom: 1px solid rgba(0,0,0,.1);          
+                .item-title{
+                    position: relative;
+                }
+                .item-title::after{
+                    content: "";
+                    width: 15px;
+                    height: 9px;
+                    display: inline-block;
+                    position: absolute;                
+                    right: 0;
+                    margin-top: 7px;
+                    margin-left: 20px;
+                    background-image: url(https://www.codigo.co/img/icons/arrow-red.svg);
+                    background-repeat: no-repeat;
+                }
+                .item-title:hover::after{
+                    margin-left: 40px;                    
+                    transition: 1s;                
+                }
+                .item-title:hover{
+                    color: #d5333e; 
+                }
+            }
+        }
+    }
 }

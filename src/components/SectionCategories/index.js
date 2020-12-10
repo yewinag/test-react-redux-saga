@@ -9,10 +9,13 @@ import './section-categories.scss';
 
 class SectionCategories extends Component {
     componentDidMount(){
-        const { searchParam } = this.props;        
+        const { searchParam } = this.props;                
         if(searchParam){
             this.props.requestData(searchParam.split('=')[1]);
-        }        
+        }else{
+            console.log(searchParam);
+            this.props.requestData("all");
+        }
     }
     renderServices = ()=> (
         this.props.services.data.length > 0 && this.props.services.data.map((item,index)=> (
