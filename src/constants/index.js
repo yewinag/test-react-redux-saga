@@ -51,20 +51,31 @@ export const services = [
 
 export const dataSet = [
     {
+        name: '7Rewards',
+        txt: 'Retail & Entertainment',
+        mobile: true,
+        web: true,
+        setting: false,
+        keyword: 'retail-and-entertainment',
+        bg_url: 'https://cdn.codigo.co/uploads/2018/04/711.jpg'
+    },
+    {
         name: 'Dine Inn',
         txt: 'Co-incubation',
         mobile: true,
         web: true,
         setting: true,
-        keyword: 'food-and-beverage'
+        keyword: 'food-and-beverage',
+        bg_url: 'https://cdn.codigo.co/uploads/2018/12/dineinn.jpg'
     },
     {
-        name: 'McDonald"s',
+        name: "McDonald's",
         txt: 'Food & Beverage',
         mobile: true,
         web: false,
         setting: false,
-        keyword: 'food-and-beverage'
+        keyword: 'food-and-beverage',
+        bg_url: 'https://cdn.codigo.co/uploads/2018/12/mc-cafe-thumbnail@2x.jpg'
     },
     {
         name: 'T Singapore',
@@ -72,7 +83,8 @@ export const dataSet = [
         mobile: false,
         web: true,
         setting: true,
-        keyword: 'lifestyle'
+        keyword: 'lifestyle',
+        bg_url: 'https://cdn.codigo.co/uploads/2018/12/TSingapore-thumbnail@2x.jpg'
     },
     {
         name: 'Sky Premium',
@@ -80,23 +92,17 @@ export const dataSet = [
         mobile: true,
         web: true,
         setting: false,
-        keyword: 'lifestyle'
-    },
-    {
-        name: '7Rewards',
-        txt: 'Retail & Entertainment',
-        mobile: true,
-        web: true,
-        setting: false,
-        keyword: 'retail-and-entertainment'
-    },
+        keyword: 'lifestyle',
+        bg_url: 'https://cdn.codigo.co/uploads/2018/11/skypremium-thumbnail@2x.jpg'
+    },    
     {
         name: 'FairPrice Online',
         txt: 'Retail & Entertainment',
         mobile: true,
         web: true,
         setting: false,
-        keyword: 'retail-and-entertainment'
+        keyword: 'retail-and-entertainment',
+        bg_url: 'https://cdn.codigo.co/uploads/2018/08/FPOL.jpg'
     },
     {
         name: 'Charles & Keith / Pedro',
@@ -104,7 +110,8 @@ export const dataSet = [
         mobile: true,
         web: false,
         setting: false,
-        keyword: 'retail-and-entertainment'
+        keyword: 'retail-and-entertainment',
+        bg_url: 'https://cdn.codigo.co/uploads/2018/12/ck.jpg'
     },
     {
         name: 'Justice League',
@@ -112,7 +119,8 @@ export const dataSet = [
         mobile: true,
         web: false,
         setting: false,
-        keyword: 'retail-and-entertainment'
+        keyword: 'retail-and-entertainment',
+        bg_url: 'https://cdn.codigo.co/uploads/2018/11/thumbnail-justice_league@2x.jpg'
     },
     {
         name: 'FastFast',
@@ -120,7 +128,8 @@ export const dataSet = [
         mobile: true,
         web: false,
         setting: false,
-        keyword: 'start-ups'
+        keyword: 'start-ups',
+        bg_url: 'https://cdn.codigo.co/uploads/2018/12/FF-1.jpg'
     },
     {
         name: 'Dine Inn',
@@ -128,7 +137,8 @@ export const dataSet = [
         mobile: true,
         web: false,
         setting: false,
-        keyword: 'start-ups'
+        keyword: 'start-ups',
+        bg_url: 'https://cdn.codigo.co/uploads/2018/12/dineinn.jpg'
     },
     {
         name: 'Fullerton Health',
@@ -136,7 +146,8 @@ export const dataSet = [
         mobile: true,
         web: false,
         setting: false,
-        keyword: 'healthcare'
+        keyword: 'healthcare',
+        bg_url: 'https://cdn.codigo.co/uploads/2018/11/fullerton-health-thumbnail@2x.jpg'
     },
     {
         name: 'ComfortDelGro',
@@ -144,7 +155,8 @@ export const dataSet = [
         mobile: true,
         web: false,
         setting: false,
-        keyword: 'transport-and-logistics'
+        keyword: 'transport-and-logistics',
+        bg_url: 'https://cdn.codigo.co/uploads/2018/08/CDG-2-1.jpg'
     },
     {
         name: 'SingPost',
@@ -152,7 +164,8 @@ export const dataSet = [
         mobile: true,
         web: true,
         setting: true,
-        keyword: 'transport-and-logistics'
+        keyword: 'transport-and-logistics',
+        bg_url: 'https://cdn.codigo.co/uploads/2018/12/singpost-thumbnail@2x.jpg'
     },
     {
         name: 'Siemens Engineering',
@@ -160,7 +173,8 @@ export const dataSet = [
         mobile: true,
         web: false,
         setting: false,
-        keyword: 'transport-and-logistics'
+        keyword: 'transport-and-logistics',
+        bg_url: 'https://cdn.codigo.co/uploads/2018/11/siemens.jpg'
     },
     {
         name: 'MyRepublic Mobile',
@@ -168,16 +182,10 @@ export const dataSet = [
         mobile: true,
         web: false,
         setting: false,
-        keyword: 'telco'
+        keyword: 'telco',
+        bg_url: 'https://cdn.codigo.co/uploads/2018/12/MYR.jpg'
     },
-    {
-        name: 'Fast Fast',
-        txt: 'Incubation',
-        mobile: true,
-        web: false,
-        setting: false,
-        keyword: 'co-incubation'
-    },
+    
     
 
 ]

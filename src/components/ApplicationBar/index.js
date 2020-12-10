@@ -15,7 +15,7 @@ class ApplicationBar extends Component {
                     <nav className="nav-list">
                         <ul>
                             <li>
-                                <Link to="/work">Work</Link>
+                                <Link to="/work?tags=all">Work</Link>
                             </li>
                             <li>
                                 <Link to="/solutions">Solutions</Link>
