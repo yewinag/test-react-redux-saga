@@ -30,7 +30,6 @@ class Categories extends Component {
                             onClick={()=> this.handleSelect(item)}                 
                             className={ item.keyword == this.state.activeItem ? 'active' : ''}            
                         >
-                            {/* {item.keyword == this.state.activeItem ? <span />:null}                             */}                            
                             <Link to={`/work?tags=${item.keyword}`}>{item.name}</Link>                            
                         </li>
                     )}

@@ -53,6 +53,7 @@ export const dataSet = [
     {
         name: '7Rewards',
         txt: 'Retail & Entertainment',
+        url: 'rewards',
         mobile: true,
         web: true,
         setting: false,
@@ -62,6 +63,7 @@ export const dataSet = [
     {
         name: 'Dine Inn',
         txt: 'Co-incubation',
+        url: 'dine-inn',
         mobile: true,
         web: true,
         setting: true,
@@ -71,6 +73,7 @@ export const dataSet = [
     {
         name: "McDonald's",
         txt: 'Food & Beverage',
+        url: 'mcdonal',
         mobile: true,
         web: false,
         setting: false,
@@ -80,6 +83,7 @@ export const dataSet = [
     {
         name: 'T Singapore',
         txt: 'Lifestyle',
+        url: 't-singapore',
         mobile: false,
         web: true,
         setting: true,
@@ -89,6 +93,7 @@ export const dataSet = [
     {
         name: 'Sky Premium',
         txt: 'Lifestyle',
+        url: 'sky-premium',
         mobile: true,
         web: true,
         setting: false,
@@ -98,6 +103,7 @@ export const dataSet = [
     {
         name: 'FairPrice Online',
         txt: 'Retail & Entertainment',
+        url: 'fairprice-online',
         mobile: true,
         web: true,
         setting: false,
@@ -107,6 +113,7 @@ export const dataSet = [
     {
         name: 'Charles & Keith / Pedro',
         txt: 'Retail & Entertainment',
+        url: 'charles-keith',
         mobile: true,
         web: false,
         setting: false,
@@ -116,6 +123,7 @@ export const dataSet = [
     {
         name: 'Justice League',
         txt: 'Retail & Entertainment',
+        url: 'justice-league',
         mobile: true,
         web: false,
         setting: false,
@@ -125,6 +133,7 @@ export const dataSet = [
     {
         name: 'FastFast',
         txt: 'Transport & Logistics',
+        url: 'fastfast',
         mobile: true,
         web: false,
         setting: false,
@@ -134,6 +143,7 @@ export const dataSet = [
     {
         name: 'Dine Inn',
         txt: 'Food & Beverage, Start-ups',
+        url: 'dine-inn',
         mobile: true,
         web: false,
         setting: false,
@@ -143,6 +153,7 @@ export const dataSet = [
     {
         name: 'Fullerton Health',
         txt: 'Healthcare',
+        url: 'fullerton-health',
         mobile: true,
         web: false,
         setting: false,
@@ -151,6 +162,7 @@ export const dataSet = [
     },
     {
         name: 'ComfortDelGro',
+        url: 'comfortdelgro',
         txt: 'Transport & Logistics',
         mobile: true,
         web: false,
@@ -160,6 +172,7 @@ export const dataSet = [
     },
     {
         name: 'SingPost',
+        url: 'singpost',
         txt: 'Transport & Logistics',
         mobile: true,
         web: true,
@@ -170,6 +183,7 @@ export const dataSet = [
     {
         name: 'Siemens Engineering',
         txt: 'Transport & Logistics',
+        url: 'siemens-engineering',
         mobile: true,
         web: false,
         setting: false,
@@ -178,6 +192,7 @@ export const dataSet = [
     },
     {
         name: 'MyRepublic Mobile',
+        url: 'myrepublic-mobile',
         txt: 'Telco',
         mobile: true,
         web: false,
