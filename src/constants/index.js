@@ -60,7 +60,7 @@ export const dataSet = [
         keyword: 'retail-and-entertainment',
         bg_color: "rgb(27, 164, 85)",
         bg_url: 'https://cdn.codigo.co/uploads/2018/04/711.jpg',
-        detail_img: 'https://cdn.codigo.co/uploads/2018/04/711.jpg',        
+        detail_img: 'https://cdn.codigo.co/uploads/2018/04/7Eleven_01.png',        
         desc: "Convenience now comes with a side of rewards. The 7Rewards mobile app is a delightful and effortless experience for all loyal 7-Eleven customers. Implemented islandwide and fully integrated with every point-of-sale system, all customers can simply scan their unique member barcode after every purchase and receive stamps that can be used to redeem any rewards of their choice. Powered by a custom-made CMS, 7-Eleven can track and monitor their customers' purchasing and redemption behaviours to craft more palatable and desirable promotional campaigns or even conduct market surveys on new products before public launches all via a comprehensive dashboard",                
     },
     {

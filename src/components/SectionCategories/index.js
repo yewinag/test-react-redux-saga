@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { useLocation } from 'react-router-dom';
 import CategoryItem from './CategoryItem';
 
 import { requestData } from '../../actions';
@@ -13,7 +12,6 @@ class SectionCategories extends Component {
         if(searchParam){
             this.props.requestData(searchParam.split('=')[1]);
         }else{
-            console.log(searchParam);
             this.props.requestData("all");
         }
     }
