@@ -84,6 +84,9 @@
                 color: #1f1f1f;
                 font-weight: bold;
             }
+            li.mobile{
+                display: none;
+            }
             .detail{
                 display: none;
             }
@@ -99,12 +102,49 @@
     }
 }
 @media screen and (max-width: 980px) {
-    .app-nav .nav-list ul {
+    .app-nav .nav-list ul {        
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: rgb(213, 51, 62);        
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;     
+        flex-direction: column;     
+        align-items: center;        
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 160px;
+    }
+    .app-nav .nav-list ul.open{
+        width: 100%;
+    }
+    .app-nav .nav-list ul li a{
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+    }
+    .app-nav .nav-list ul li.quote{
         display: none;
+    }
+    .app-nav .nav-list ul li.mobile{
+        display: block;
+    }
+    .app-nav .nav-list ul li.detail{
+        display: block;
     }
     .app-nav .nav-list .mobile-btn {        
         display: block;
-    }    
+    }  
+    .app-nav .nav-list .mobile-btn{
+        position: absolute;
+        right: 20px;
+        z-index: 20;
+        top: 28px;
+    }  
 }
 @media screen and (max-width: 600px) {
     .app-nav .nav-list{

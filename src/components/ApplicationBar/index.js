@@ -4,8 +4,18 @@ import './application-bar.scss';
 
 import logo from '../../assets/img/logo-codigo-red.svg';
 import menu from '../../assets/img/menu.png';
+import close from '../../assets/img/close.png';
 class ApplicationBar extends Component {
 
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+            isOpenMenu: false
+        }
+
+    }
+    
     detectRoute = () => window.location.pathname == '/work' || window.location.pathname == '/'; // detect route
 
     render() { 
@@ -25,32 +35,45 @@ class ApplicationBar extends Component {
                             }                        
                         </div>
                     </a>
-                    <nav className="nav-list">                                                
-                        <div className="mobile-btn">
-                            <img src={menu} alt="menu"/>
-                        </div>
-                        <ul>
+                    <nav className="nav-list">       
+                        {
+                            this.state.isOpenMenu ?
+                            <div className="mobile-btn" onClick={()=> this.setState({isOpenMenu: !this.state.isOpenMenu})}>                            
+                                <img src={close} alt="menu"/>                            
+                            </div>                        
+                            :
+                            <div className="mobile-btn" onClick={()=> this.setState({isOpenMenu: !this.state.isOpenMenu})}>                                
+                                <img src={menu} className="close" alt="menu" />                                
+                            </div>                                                        
+                        }                                                                                             
+                        <ul className={this.state.isOpenMenu ? "open" : ""}>                            
                             <li className={this.detectRoute() ? '':'detail'}>
-                                <Link to="/work?tags=all">Work</Link>
+                                <a href="/work?tags=all">Work</a>
                             </li>
                             <li className={this.detectRoute() ? '':'detail'}>
-                                <Link to="/solutions">Solutions</Link>
+                                <a href="/solutions">Solutions</a>
                             </li>
                             <li className={this.detectRoute() ? '':'detail'}>
-                                <Link to="/services">Services</Link>
+                                <a href="/services">Services</a>
                             </li>
                             <li className={this.detectRoute() ? '':'detail'}>
-                                <Link to="/about">about us</Link>
+                                <a href="/about">about us</a>
                             </li>
                             <li className={this.detectRoute() ? '':'detail'}>
-                                <Link to="/blog">Blog</Link>
+                                <a href="/blog">Blog</a>
+                            </li>
+                            <li className={this.detectRoute() ? 'mobile':'detail mobile'}>
+                                <a href="/">Request a quote</a>
+                            </li>
+                            <li className={this.detectRoute() ? 'mobile':'detail mobile'}>
+                                <a href="/">Let's chat</a>
                             </li>
                             <li className="quote">
-                                <Link to="/blog">
+                                <a href="/blog">
                                     <button>
                                         Request a quote
                                     </button>
-                                </Link>
+                                </a>
                             </li>
                         </ul>
                     </nav>
