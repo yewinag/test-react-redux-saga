@@ -9,11 +9,49 @@
     padding-bottom: 30px;
     background-color: #fff;    
     z-index: 1000;
+    a{
+        text-decoration: none;
+    }
     .logo{
         padding-left: 40px;
         img{
             height: 19px;
             width: 145px;
+        }
+        .back-icon{
+            display: flex;
+            align-items: center;
+            padding: 4px 0;
+            .icon{
+                content: "";
+                width: 14px;
+                height: 9px;
+                background: url(https://www.codigo.co/img/icons/arrow-red.svg);
+                background-size: cover;
+                display: inline-block;
+                transform: scaleX(-1);
+                margin-right: 10px;
+            }
+            .back-txt{
+                position: relative;
+                margin: 0;
+            }
+            .back-txt::before{
+                content: "";
+                width: 0;
+                height: 1px;
+                background: #000;
+                display: inline-block;
+                position: absolute;
+                top: calc(100% + 3px);
+                left: -1px;
+                transition: .5s cubic-bezier(.4,.6,.6,1);
+            
+            }
+            .back-txt:hover::before{
+                width: 100%;
+                transition: .4s cubic-bezier(.2,.6,.4,1);
+            }
         }
     }
     .nav-list{
@@ -45,6 +83,9 @@
             li:hover {                
                 color: #1f1f1f;
                 font-weight: bold;
+            }
+            .detail{
+                display: none;
             }
             button{
                 background-color: #3a2837;

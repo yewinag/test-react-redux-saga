@@ -1,4 +1,5 @@
 import React from 'react';
+import AvailablePlatform from './AvailablePlatform';
  
 import './category-item.scss';
 
@@ -7,8 +8,14 @@ const CategoryItem = (props) => (
             <div className="title">
                 <p>{props.item.txt}</p>
                 <h5>{props.item.name}</h5>
+                
             </div>           
-            <img src={props.item.bg_url} alt={props.item.name}/>
+            <img src={props.item.bg_url} alt={props.item.name}/>            
+            <AvailablePlatform 
+                mobile={props.item.mobile}
+                web={props.item.web}
+                setting={props.item.setting}
+            />            
         </a>
     );    
  

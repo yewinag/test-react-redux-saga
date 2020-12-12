@@ -34,6 +34,27 @@ class Categories extends Component {
                         </li>
                     )}
                 </ul>
+                <div className="legend">
+                    <p className="legend-title">Legend</p>
+                    <div className="legend-category">
+                        <div className="category-item">
+                            <div className="category-img" style={{backgroundImage: `url(${'https://www.codigo.co/img/ui/ico-app.svg'})`}}/>
+                            <div>App</div>
+                        </div>
+                        <div className="category-item">
+                            <div className="category-img" style={{backgroundImage: `url(${'https://www.codigo.co/img/ui/ico-web.svg'})`}}/>
+                            <div>Web</div>
+                        </div>
+                        <div className="category-item">
+                            <div className="category-img" style={{backgroundImage: `url(${'https://www.codigo.co/img/ui/ico-cms.svg'})`}}/>
+                            <div>CMS</div>
+                        </div>
+                        <div className="category-item">
+                            <div className="category-img" style={{backgroundImage: `url(${'https://www.codigo.co/img/ui/ico-uiux.svg'})`}}/>
+                            <div>UI/UX</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }
